@@ -1,0 +1,20 @@
+{
+  "name": "mongorc-manager",
+  "version": "1.0.0",
+  "description": "A tiny tool to import functions into your .mongorc.js",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "mongodb",
+    "mongo",
+    "shell",
+    "mongorc"
+  ],
+  "author": "Massimiliano Marcon",
+  "license": "ISC",
+  "dependencies": {
+    "debug": "^4.1.1"
+  }
+}
