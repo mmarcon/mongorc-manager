@@ -1,6 +1,6 @@
 # mongorc-manager
 
-![Travis build status](https://api.travis-ci.org/mmarcon/mongorc-manager.svg?branch=master)
+[![Travis build status](https://api.travis-ci.org/mmarcon/mongorc-manager.svg?branch=master)](https://travis-ci.org/mmarcon/mongorc-manager)
 
 A simple command line utility to manage your `~/.mongorc.js`.
 
