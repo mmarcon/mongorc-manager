@@ -2,8 +2,10 @@
   "name": "mongorc-manager",
   "version": "1.0.0",
   "description": "A tiny tool to import functions into your .mongorc.js",
-  "main": "index.js",
-  "scripts": {},
+  "main": "mongorc-manager.js",
+  "scripts": {
+    "test": "tape ./test.js | faucet"
+  },
   "bin": "./cli.js",
   "keywords": [
     "mongodb",
@@ -17,5 +19,9 @@
   "dependencies": {
     "debug": "^4.1.1",
     "yargs": "^12.0.5"
+  },
+  "devDependencies": {
+    "faucet": "0.0.1",
+    "tape": "^4.9.2"
   }
 }

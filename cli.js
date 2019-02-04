@@ -1,7 +1,9 @@
 #!/usr/bin/env node
 const yargs = require('yargs');
 const debug = require('debug')('mongorc-manager-cli');
-const mongorcmgr = require('.');
+const path = require('path');
+const mongorcmgr = require('./mongorc-manager');
+const fileManager = require('./lib/file-manager');
 const package = require('./package.json');
 
 debug(`Node ${process.version}`);
@@ -28,13 +30,13 @@ function cmdline() {
 
 if (args.list) {
     debug('command::list');
-    return mongorcmgr.listLinkedLibraries();
+    return mongorcmgr.listLinkedLibraries(fileManager);
 }
 if (args.link) {
     debug('command::link');
-    return mongorcmgr.linkLibrary(args.link);
+    return mongorcmgr.linkLibrary(path.resolve(process.cwd(), args.link), fileManager);
 }
 if (args.unlink) {
     debug('command::unlink');
-    return mongorcmgr.unlinkLibrary(args.unlink);
+    return mongorcmgr.unlinkLibrary(args.unlink, fileManager);
 }
