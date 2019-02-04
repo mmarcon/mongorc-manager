@@ -1,5 +1,7 @@
 # mongorc-manager
 
+![Travis build status](https://api.travis-ci.org/mmarcon/mongorc-manager.svg?branch=master)
+
 A simple command line utility to manage your `~/.mongorc.js`.
 
 As I started taking advantage of `~/.mongorc.js` and adding functions and helpers I typically
